@@ -9,8 +9,7 @@
         $discount_price = $list_price - $discount;
     // apply currency formatting to the	dollar and percent amounts
         $list_price_formatted = "$".number_format($list_price, 2);
-        $discount_percent_formatted =
-	$discount_percent."%";
+        $discount_percent_formatted= number_format ($discount_percent,1)."%";
         $discount_formatted = "$".number_format($discount, 2);
 	$discount_price_formatted = "$".number_format($discount_price,2);          // escape the unformatted input
         $product_description_escaped = htmlspecialchars($product_description);?>
